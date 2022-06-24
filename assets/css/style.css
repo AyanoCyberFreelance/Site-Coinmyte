@@ -1,0 +1,1132 @@
+body {
+  margin: 0;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #6c7279;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: rgb(255, 255, 255);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* Container
+===================*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header
+===================*/
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #fff;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header_logo {
+  cursor: pointer;
+}
+
+.header.fixed {
+  height: auto;
+
+  position: fixed;
+
+  background-color: #1b0b38;
+}
+
+.header.fixed .header_inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 0;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Nav
+===================*/
+.nav {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav_link {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 25px;
+
+  transition: all 0.4s linear;
+}
+
+.search_link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.search_link--2 {
+  display: none;
+}
+
+.nav_link:focus {
+  background-color: #fff;
+  color: black;
+}
+
+/* Intro
+===================*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 110px 0;
+  background: url(/assets/images/intro/Coinmyte_01.png) center no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #fff;
+}
+
+.intro_blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+}
+
+.intro_block {
+  width: 33.33333%;
+  max-width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+
+.intro_block--3 {
+  padding-top: 160px;
+}
+
+.intro_suptitle {
+  font-size: 16px;
+  color: #fff;
+}
+
+.intro_title {
+  font-size: 104px;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 165px;
+  line-height: 1;
+  margin-bottom: 50px;
+  text-shadow: 0px 0px 15px rgba(239, 66, 207, 0.85);
+}
+
+.intro_img img {
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px 5px rgba(255, 0, 217, 0.31);
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.intro_subtitle {
+  font-size: 18px;
+  color: #fff;
+  padding-top: 30px;
+}
+
+.intro_text {
+  color: rgb(185, 185, 185);
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.intro_photo img {
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px 5px rgba(255, 0, 217, 0.31);
+  cursor: pointer;
+  max-width: 100%;
+}
+
+/* Buttons
+===================*/
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 30px;
+  margin: 0 5px;
+
+  border-radius: 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: all 0.4s linear;
+}
+
+.button:focus {
+  background-color: #fff;
+  color: black;
+}
+
+/* Burger
+===================*/
+.burger {
+  display: none;
+  padding: 9px 2px;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 28px;
+  height: 3px;
+
+  background-color: #fff;
+
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  height: 100%;
+
+  background-color: #fff;
+
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.burger__item:before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger__item:after {
+  width: 26px;
+  bottom: -8px;
+}
+
+/* Transparent
+===================*/
+.transparent {
+  text-align: center;
+  height: 100%;
+  padding: 110px 0;
+  background: url(/assets/images/transparent/Coinmyte_07.png) center no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #fff;
+}
+
+.transparent_images img {
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px 5px rgba(255, 0, 217, 0.31);
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.transparent_content {
+  padding-top: 50px;
+}
+
+.transparent_suptitle {
+  font-size: 17px;
+  color: rgb(224, 224, 224);
+  padding-bottom: 20px;
+  font-family: "Kaushan Script", sans-serif;
+}
+
+.transparent_title {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  width: 500px;
+  margin: auto;
+  text-shadow: 0px 0px 15px rgba(239, 66, 207, 0.85);
+}
+
+.transparent_text {
+  font-size: 15px;
+  color: rgb(224, 224, 224);
+  line-height: 1.4;
+  width: 500px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.transparent_button {
+  padding: 10px 30px;
+
+  border-radius: 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  background: none;
+
+  transition: all 0.4s linear;
+}
+
+.transparent_button:focus {
+  background-color: #fff;
+  color: black;
+}
+
+/* Features
+===================*/
+.features {
+  text-align: center;
+  height: 100%;
+  padding: 110px 0;
+  background: url(/assets/images/features/Background.png) center no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid #fff;
+}
+
+.features_blocks {
+  display: flex;
+  align-items: center;
+}
+
+.features_item {
+  text-align: left;
+  max-width: 100%;
+}
+
+.features_item--1 {
+  border-bottom: 1px solid rgb(88, 88, 88);
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.features_img img {
+  width: 2090px;
+  max-width: 100%;
+}
+
+.features_title {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  width: 500px;
+  margin: auto;
+  text-shadow: 0px 0px 15px rgba(239, 66, 207, 0.85);
+  padding-bottom: 30px;
+}
+
+.features_subtitle {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.features_text {
+  font-size: 15px;
+  color: rgb(224, 224, 224);
+  line-height: 1.4;
+}
+
+.features_button {
+  padding: 10px 30px;
+  margin-top: 20px;
+
+  border-radius: 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  background: none;
+
+  transition: all 0.4s linear;
+}
+
+.features_button:focus {
+  background-color: #fff;
+  color: black;
+}
+
+/* Trading
+===================*/
+.trading {
+  text-align: center;
+  height: 100%;
+  background: url(/assets/images/Trading/trading_02.png) center no-repeat;
+  background-size: cover;
+  padding: 110px 0;
+}
+
+.trading_blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trading_block {
+  padding: 0 15px;
+  width: 50%;
+}
+
+.trading_block--1 {
+  text-align: left;
+}
+
+.trading_button {
+  padding: 10px 30px;
+  margin-top: 30px;
+
+  border-radius: 25px;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  background: none;
+
+  transition: all 0.4s linear;
+}
+
+.trading_button:focus {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.trading_title {
+  font-size: 80px;
+  color: rgb(28, 28, 28);
+  font-weight: 400;
+  line-height: 1;
+  width: 450px;
+  padding-bottom: 30px;
+}
+
+.trading_suptitle {
+  font-size: 18px;
+  color: rgb(28, 28, 28);
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.trading_text {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  line-height: 1.4;
+  width: 550px;
+}
+
+/* learning
+===================*/
+.learning {
+  height: 100%;
+  width: 100%;
+  background: url(/assets/images/learning/learning_03.png) center no-repeat;
+  background-size: cover;
+  padding: 110px 0;
+}
+
+.learning_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learning_block:last-child {
+  border: 0;
+}
+
+.learning_item {
+  border-bottom: 1px solid rgb(88, 88, 88);
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.learning_maintitle {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  margin: auto;
+  text-shadow: 0px 0px 15px rgba(239, 66, 207, 0.85);
+  padding-bottom: 80px;
+}
+
+.learning_img img {
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 5px rgba(221, 0, 255, 0.51);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.learning_title {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.learning_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.learning_arrow {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Crypto
+===================*/
+.crypto {
+  height: 100%;
+  background: url(/assets/images/Trading/trading_02.png) center no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+}
+
+.crypto_suptitle {
+  text-align: center;
+}
+
+.crypto_suptitle {
+  font-size: 16px;
+  color: rgb(28, 28, 28);
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.crypto_title {
+  text-align: center;
+  font-size: 80px;
+  color: rgb(28, 28, 28);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.crypto_block {
+  border-top: 1px solid rgb(33, 33, 33);
+  margin-top: 80px;
+  padding-top: 80px;
+  display: flex;
+}
+
+.crypto_item {
+  padding: 0 15px;
+}
+
+.crypto_item:first-child {
+  padding-left: 0;
+}
+
+.crypto_item:last-child {
+  padding-right: 0;
+}
+
+.crypto_subtitle {
+  font-size: 16px;
+  color: rgb(28, 28, 28);
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.crypto_text {
+  font-size: 14px;
+  color: rgb(74, 74, 74);
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+/* Reviews
+===================*/
+.reviews {
+  height: 100%;
+  background: url(/assets/images/reviews/reviews_02.png) center no-repeat;
+  background-size: cover;
+  padding: 130px 0;
+  border-bottom: 2px solid white;
+}
+
+.reviews_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews_item {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.reviews_title {
+  font-size: 90px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1;
+  width: 420px;
+  max-width: 100%;
+  text-shadow: 0px 0px 15px rgba(239, 66, 207, 0.85);
+  padding-bottom: 30px;
+}
+
+.reviews_subtitle {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.reviews_content {
+  margin-bottom: 40px;
+  max-width: 100%;
+  width: 500px;
+}
+
+.reviews_text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.reviews_author {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+/* Footers
+===================*/
+.footer {
+  background: url(/assets/images/Footer/footer_02.png) center no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.footer_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer_heading {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer_link {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.footer_link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_link a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright
+===================*/
+.copyright {
+  text-align: center;
+  border-top: 1px solid rgb(88, 88, 88);
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+.copyright_text {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.copyright_text--2 {
+  padding-top: 10px;
+}
+
+.copyright_text--2 span {
+  color: crimson;
+}
+
+.burger {
+  display: none;
+  padding: 9px 2px;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger_item {
+  display: block;
+  width: 28px;
+  height: 3px;
+
+  background-color: #fff;
+
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+
+.burger_item:before,
+.burger_item:after {
+  content: "";
+  height: 100%;
+
+  background-color: #fff;
+
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.burger_item:before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger_item:after {
+  width: 26px;
+  bottom: -8px;
+}
+
+/* Media
+===================*/
+@media (max-width: 1200px) {
+  /* Intro */
+  .intro_blocks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .intro_block {
+    width: 100%;
+  }
+
+  .intro_block--2 {
+    display: none;
+  }
+
+  .intro_block--3 {
+    padding-top: 0;
+  }
+
+  .intro_title {
+    padding-top: 135px;
+  }
+
+  .intro_photo img {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Header */
+  .header {
+    background-color: #1b0b38;
+  }
+
+  /* Nav */
+  .nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+
+    background-color: #1b0b38;
+    text-align: right;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .nav_link {
+    padding: 15px 15px;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .search_link {
+    display: none;
+  }
+
+  .search_link--2 {
+    display: block;
+    padding: 15px 15px;
+  }
+
+  .nav_link:first-child {
+    border-top: 2px solid #fff;
+  }
+
+  /* Intro */
+  .intro_blocks {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .intro_block--1 {
+    margin-bottom: 50px;
+  }
+
+  .intro_block--2 {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .intro_title {
+    font-size: 80px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .intro_text {
+    width: 500px;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .intro_photo img {
+    min-width: 42%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Burger */
+  .burger {
+    display: block;
+  }
+
+  /* Features */
+  .features_blocks {
+    margin-bottom: 70px;
+    margin-top: 60px;
+  }
+
+  .features_mid {
+    display: none;
+  }
+
+  .features_item {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .features_item--1 {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+
+  /* Trading */
+  .trading_title {
+    width: 100%;
+    margin-right: 0;
+    font-size: 70px;
+  }
+
+  .trading_text {
+    width: 100%;
+  }
+
+  /* Learning */
+  .learning_maintitle {
+    font-size: 70px;
+  }
+
+  /* Crypto */
+  .crypto {
+    padding: 100px 0;
+  }
+
+  .crypto_title {
+    font-size: 70px;
+  }
+
+  /* Reviews */
+  .reviews_title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Intro */
+  .intro_title {
+    font-size: 70px;
+  }
+
+  /* Features */
+  .features_blocks {
+    display: block;
+  }
+
+  .features_mid {
+    display: block;
+    width: 70%;
+    margin: auto;
+    padding: 40px 0;
+  }
+
+  /* Trading */
+  .trading_blocks {
+    display: block;
+  }
+
+  .trading_block {
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    min-width: 90%;
+  }
+
+  .trading_block:first-child {
+    margin-bottom: 50px;
+  }
+
+  .trading_img img {
+    width: 100%;
+  }
+
+  /* Crypto */
+  .crypto_block {
+    display: block;
+  }
+
+  .crypto_title {
+    font-size: 60px;
+  }
+
+  .crypto_item {
+    padding: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .crypto_item:last-child {
+    padding: 0;
+  }
+
+  /* Reviews */
+  .reviews {
+    padding: 90px 0;
+  }
+
+  .reviews_block {
+    display: block;
+    text-align: center;
+  }
+
+  .reviews_title {
+    margin: auto;
+    font-size: 60px;
+  }
+
+  .reviews_item {
+    margin: auto;
+    width: 100%;
+  }
+
+  .reviews_content {
+    margin: auto;
+    padding-bottom: 40px;
+  }
+
+  .reviews_item:first-child {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 647px) {
+  /* Intro */
+  .intro_title {
+    font-size: 60px;
+  }
+
+  /* Transparent */
+  .transparent_images img {
+    margin-bottom: 30px;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .transparent_title {
+    max-width: 100%;
+    font-size: 60px;
+  }
+
+  .transparent_text {
+    max-width: 100%;
+  }
+
+  /* Features */
+  .features_title {
+    font-size: 60px;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Trading */
+  .trading_title {
+    font-size: 60px;
+  }
+
+  /* Learning */
+  .learning_maintitle {
+    font-size: 60px;
+  }
+
+  .learning_block {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Intro */
+  .intro {
+    padding-top: 60px;
+  }
+
+  .intro_title {
+    font-size: 50px;
+  }
+
+  /* Button */
+  .button:first-child {
+    margin-bottom: 20px;
+  }
+
+  /* Transparent */
+  .transparent_title {
+    width: 100%;
+    font-size: 50px;
+  }
+
+  /* Features */
+  .features_title {
+    font-size: 50px;
+  }
+
+  /* Trading */
+  .trading_title {
+    font-size: 50px;
+  }
+
+  /* Learning */
+  .learning_maintitle {
+    font-size: 40px;
+  }
+
+  /* Crypto */
+  .crypto_title {
+    font-size: 50px;
+  }
+
+  /* Reviews */
+  .reviews_title {
+    font-size: 50px;
+  }
+
+  /* Footer */
+  .footer_list {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Intro */
+  .intro_title {
+    font-size: 35px;
+  }
+
+  /* Trading */
+  .trading_title {
+    font-size: 40px;
+  }
+}
